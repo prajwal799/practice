@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #tomoto_box{
+            width: 100%;
+            height: 920px;
+            background-image: url('https://wallpaperaccess.com/full/1462901.jpg');
+            padding-top: 50px;
+        }
+        .menu_detalis{
+            width: 740px;
+            height: 790px;
+            margin: auto;
+            background: white;
+        }
+        .menu_detalis > h1{
+            font-size: 48px;
+            padding-top: 30px;
+            padding-left: 30px;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+        }
+        .menu_detalis > h3 {
+            width: 90%;
+            margin-top: 10px;
+            padding-left: 30px;
+        }
+        #menu_detalis_img{
+            width: 80%;
+             height: 70%;
+             margin: auto;
+              display: grid;
+              grid-template-areas: 
+                             'first_img second_img third_img'
+                             'four_img  five_img  six_img';
+              grid-gap: 10px;
+        }
+        #menu_detalis_img div {
+            width: 171px;
+            height: 222px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            border-radius: 10px;
+        }
+        #menu_detalis_img div:hover{
+            background: lightgrey;
+        }
+        #menu_detalis_img div h3{
+         margin-top: 20px;
+         text-align: center;
+        }
+        .items_menu1{
+            grid-area: first_img;   
+        }
+        .items_menu2{
+            grid-area: second_img;
+        }
+        .items_menu3{
+            grid-area: third_img;
+        }
+        .items_menu4{
+            grid-area: four_img;
+        }
+        .items_menu5{
+            grid-area: five_img;
+        }
+        .items_menu6{
+            grid-area: six_img;
+        }
+        .img_page_menu{
+            width: 171px;
+            border-radius: 10px;
+            width: 171px;
+            height: 121px;
+        }
+        .view_plan_menu{
+            width: 200px;
+            height: 43px;
+            font-size: 18px;
+             text-align: center; 
+             padding-top: 10px;
+            margin: auto;
+            color: white;
+            background: #3167ff;
+        }
+        #choose_plan{
+            width: 100%;
+            height: 500px;
+        }
+        #choose_plan > h1{
+            font-size: 48px;
+            text-align: center;
+            width: 600px;
+            margin: 20px auto;
+            margin-bottom: 20px;
+        }
+        #choose_plan > h2{
+            text-align: center;
+            width: 700px;
+            margin: auto;
+        }
+        .choose_plan_price{
+            width: 90%;
+            margin: 30px auto;
+            display: grid;
+            grid-template-areas: 'price4 price6 price8 price10 price12';
+            grid-gap: 25px;
+        }
+        .meal_price{
+            width: 220px;
+            height: 260px;
+            text-align: center;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        .meals_4{grid-area: price4; }
+        .meals_6{ grid-area: price6;}
+        .meals_8{grid-area: price8; }
+        .meals_8{ grid-area: price10;}
+        .meals_12{grid-area: price12; }
+
+        .meal_text_h1{
+            margin-top: 50px;
+        }
+        #choose_btn_price{
+            width: 170px;
+            height: 40px;
+            background: #3167ff;
+            border: none;
+            font-size: 16px;
+            color: white;
+        }
+        #footer{
+            width: 80%;
+            height: 400px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-areas: 'first_footer second_footer third_footer four_footer';
+        }
+        .first_part_footer{grid-area: first_footer;}
+        .second_part_footer{grid-area: second_footer;}
+        .third_part_footer{grid-area: third_footer;}
+        .four_part_footer{grid-area: four_footer;}
+       
+        .playstore_img{
+            width: 100px;
+            height: 30px;
+        } 
+        .social_media{
+            width: 30px;
+            height: 30px;
+        }
+        .footer_part ul li {
+            margin-top: 20px;
+        }
+         
+        .footer_part ul li a {
+            margin-top: 30px;
+            text-decoration: none;
+            color: #666666;
+        }
+        .footer_part ul li .company_footer{
+            color: black;
+        }
+        .img_freshly_footer{
+            width: 115px;
+            height: 26px;
+        }
+        .footer_part ul {
+            width: 200px;
+            list-style-type: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="tomoto_box">
+         <div class="menu_detalis">
+              <h1>On the menu</h1>
+              <h3>Each Freshly meal is perfectly sized for 1 person to enjoy at 1 sitting. Our fully-prepared meals are delivered fresh, and ready to eat in 3 minutes.</h3>
+              <div id="menu_detalis_img">
+                  <div class="items_menu1">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtpCWctONFtl8XzZRKNosirkqRTgW4e69Nlg&usqp=CAU" class="img_page_menu"/>
+                     <h3>Steak Peppercorn</h3>
+                    </div>
+                  <div class="items_menu2">
+                    <img src="https://recipes.net/wp-content/uploads/2020/10/Homestyle-Chicken-and-French-Fries_recipes-scaled.jpg" class="img_page_menu"/>
+                    <h3>Homestyle Chicken</h3>
+                </div>
+                <div class="items_menu3">
+                    <img src="https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_683,w_1024/v1625862402/production-meal-image-2d69b7cf-1233-428f-a8b4-bc9f77559500.jpg" class="img_page_menu"/>
+                    <h3>Cauliflower shell Beef Bolognese</h3>
+                </div>
+                <div class="items_menu4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9GEHfJPFPOitfVhZyWbk8QdzfVZwz2OXJXA&usqp=CAU" class="img_page_menu"/>
+                    <h3>Sausage Baked Penne</h3>
+                </div>
+                <div class="items_menu5">
+                    <img src="https://www.indiewire.com/wp-content/uploads/2021/09/Fresh-N-Lean-Savory-Sweet-Chicken-Teriyaki-Bowl.jpeg?w=780" class="img_page_menu"/>
+                    <h3>Savory-Sweet Chicken Teriyaki Bowl</h3>
+                </div>
+                <div class="items_menu6">
+                    <img src="https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_683,w_1024/v1607770959/production-meal-image-7a62bb89-9bcb-4f1f-9f0f-d8372698d48e.jpg" class="img_page_menu"/>
+                    <h3>Protein-Packed Chicken Parm</h3>
+                </div>
+
+              </div>
+              <div class="view_plan_menu">View Plans & Menu</div>
+            </div>
+    </div>
+    <div id="choose_plan">
+        <h1>Plans that work for you</h1>
+        <h2>Choose from 4, 6, 8, 10, or 12 meals per week. You can change up your number of meals with every order if you’d like.</h2>
+        <div class="choose_plan_price">
+            <div class="meals_4 meal_price">
+                 <h1 class="meal_text_h1">4 Meals</h1>
+                   <h5>per week</h5>
+                   <h3>$11.79 / meal</h3>
+                   <button id="choose_btn_price" onclick="sign()">Choose</button>
+            </div>
+            <div class="meals_6 meal_price">
+                <h1 class="meal_text_h1">6 Meals</h1>
+                <h5>per week</h5>
+                <h3>$9.99 / meal</h3>
+                <button id="choose_btn_price" onclick="sign()">Choose</button>
+            </div>
+            <div class="meals_8 meal_price">
+                <h1 class="meal_text_h1" onclick="sign()">8 Meals</h1>
+                <h5>per week</h5>
+                <h3>$9.49 / meal</h3>
+                <button id="choose_btn_price" onclick="sign()">Choose</button>
+            </div>
+            <div class="meals_10 meal_price">
+                <h1 class="meal_text_h1" onclick="sign()">10 Meals</h1>
+                <h5>per week</h5>
+                <h3>$9.29 / meal</h3>
+                <button id="choose_btn_price" onclick="sign()">Choose</button>
+            </div>
+            <div class="meals_12 meal_price">
+                <h1 class="meal_text_h1" onclick="sign()">12 Meals</h1>
+                <h5>per week</h5>
+                <h3>$8.99 / meal</h3>
+                <button id="choose_btn_price" onclick="sign()">Choose</button>
+            </div>
+        </div>
+      <h2>Shipping Added At Checkout</h2>
+    </div>
+
+    <div id="footer"></div>
+<script type="module" src="third.js"></script>
+</body>
+</html>
