@@ -2,12 +2,21 @@ import { appComponet } from "./actionType"
 
 const initState = {
     list : [],
+    card : [],
     isLaoding : true , 
     isError : false
 }
 const  reduce = (state = initState , {payload,type}) => {
     
      switch(type){
+         case appComponet.CARD_LIST : {
+             console.log(payload);
+             return{
+                 ...state,
+                 isLaoding :false,
+                 list : payload
+             }
+         }
         case appComponet.LIST_REQUEST : {
             return {
                 ...state,

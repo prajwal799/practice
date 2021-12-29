@@ -1,11 +1,11 @@
-import { Children, createContext } from "react";
+import { Children, createContext, useState } from "react";
 
-export const addcontext = createContext();
+export const Addcontext = createContext();
 
-const addContextProvide = ({Children}) => {
-    const [list , setList] = [];
+const AddContextProvide = ({Children}) => {
+    const [listitem , setListItem] = useState([]);
     return (
-        <addcontext.Provider>{Children}</addcontext.Provider>
+        <Addcontext.Provider value={[listitem , setListItem]}>{Children}</Addcontext.Provider>
     )
 }
-export default addContextProvide;
+export default AddContextProvide;

@@ -6,6 +6,12 @@ export const listsucces = (payload) => {
         payload
     }
 }
+export const cardList = (payload) => {
+    return {
+        type : appComponet.CARD_LIST,
+        payload
+    }
+}
 
 export const listrequest = (payload) => {
     return{
