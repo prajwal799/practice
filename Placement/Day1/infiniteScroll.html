@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <thead>
+        <title>Infinite scroll</title>
+     <style>
+         body{background-color: black;}
+          #box{
+              width: 300px;
+              background-color: blanchedalmond;
+              border: 10px solid red;
+              border-radius: 10px;
+              margin: auto;
+              text-align: center;
+          }
+
+     </style>
+    </thead>
+    <body>
+        <div >
+            <div id="box"></div>
+        </div>
+        <script>
+            var div = document.getElementById("box");
+            var total_h = 1;
+            function callInfiniteScroll(){
+                for(var i =total_h;i<total_h+25;i++){
+                var h3 = document.createElement('h2');
+                h3.textContent = "Masai School " + i;
+                div.append(h3);
+                // console.log("jck",i);
+                }
+                total_h += 25;
+            }
+
+            window.addEventListener("scroll" , () => {
+                var clinetHeight = document.documentElement.clientHeight;
+                var clientTop = document.documentElement.scrollTop;
+                var scrolHeight = document.documentElement.scrollHeight;
+               
+                 if((clientTop + clinetHeight) >= scrolHeight){
+                    callInfiniteScroll()
+                 }
+            })
+            callInfiniteScroll()
+        </script>
+    </body>
+</html>
