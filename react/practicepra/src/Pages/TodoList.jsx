@@ -1,7 +1,8 @@
 const TodoList = () => {
     return(
         <>
-        todo List
+         <input placeholder="addsomething" />
+         <button>Add</button>
         </>
     )
 }
